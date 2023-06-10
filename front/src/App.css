@@ -3,11 +3,11 @@
   padding: 0;
 }
 
-header{
+header, h1, nav{
   background-color: rgb(20, 78, 9);
-  width: 100%;
-  padding-top: 10px;
+  margin: 0;
 }
+
 
 #titulo{
   color: #fff;
