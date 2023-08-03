@@ -3,8 +3,6 @@ import React from "react";
 const Contacto = (props) => {
     return(
         <div><main>
-    
-        <h1 className="contacto">Contacto:</h1>
            
         <h2 className="mensaje">Mensajes:</h2>
     
