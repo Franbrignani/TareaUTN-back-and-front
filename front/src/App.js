@@ -9,6 +9,7 @@ import Sinopsis from './pages/Sinopsis';
 import Contacto from './pages/Contacto';
 import Autores from './pages/Autores';
 
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Sinopsis" element={<Sinopsis />} />
         <Route path="/Contacto" element={<Contacto />} />
         <Route path="/Autores" element={<Autores />} />
+
       </Routes>
      </BrowserRouter>
      <Footer />

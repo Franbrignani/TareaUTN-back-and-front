@@ -11,11 +11,11 @@ const invetarioPage = (props) => {
     useEffect(() => {
         const cargarinventario = async () => {
             setLoading(true);
-
             const response = await axios.get('http://localhost:3000/api/inventario');
             setinventario(response.data);
             setLoading(false);
         };
+
         cargarinventario();
     }, []);
 
@@ -29,10 +29,10 @@ const invetarioPage = (props) => {
             inventario.map(item => <inventarioItem key={item.id}
                 titulo={item.titulo} genero={item.genero}
                 body={item.autor} imagen={item.imagen} />)
-        )
+            )
        }
        </section>
-    );
-}
+    )
+};
 
 export default invetarioPage;
