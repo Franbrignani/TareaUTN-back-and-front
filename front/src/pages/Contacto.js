@@ -46,22 +46,22 @@ const Contacto = (props) => {
     
         <form action="/contacto" method="post" className="formulario" onSubmit={handleSubmit}>
             <p>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} />
+            <label className="campo" for="nombre">Nombre:</label>
+            <input className="campo" type="text" name="nombre" value={formData.nombre} onChange={handleChange} />
             </p>
             <p>
-            <label for="email">Email:</label>
-            <input type="text" name="email" value={formData.email} onChange={handleChange}  />
+            <label className="campo" for="email">Email:</label>
+            <input className="campo" type="text" name="email" value={formData.email} onChange={handleChange}  />
             </p>
             <p>
-                <label for="telefono">Telefono</label>
-                <input type="text" name="telefono" value={formData.telefono} onChange={handleChange}  />
+                <label className="campo" for="telefono">Telefono</label>
+                <input className="campo" type="text" name="telefono" value={formData.telefono} onChange={handleChange}  />
             </p>
             <p>
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" value={formData.mensaje} onChange={handleChange} ></textarea>
+            <label className="campo" for="mensaje">Mensaje:</label>
+            <textarea className="campo" name="mensaje" value={formData.mensaje} onChange={handleChange} ></textarea>
             </p>
-            <p className="acciones"><input type="submit" value="Enviar" /></p>
+            <p className="acciones"><input className="enviar" type="submit" value="Enviar" /></p>
         </form>
         {sending ? <p>Enviando...</p> : null}
         {msg ? <p>{msg}</p> : null}

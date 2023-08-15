@@ -122,7 +122,7 @@ label{
   margin: 10px;
 }
 
-.entrada{
+.formulario{
   display:block;
   width:96%;
   margin:10px;
@@ -132,7 +132,12 @@ label{
   transition: .3s border-color;
 }
 
-input:hover{
+.campo{
+  display: flex;
+  width: 100%;
+}
+
+.enviar:hover{
   border: 1px solid #aaa;
 }
 
