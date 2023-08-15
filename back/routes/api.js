@@ -32,7 +32,7 @@ router.post('/contacto', async (req, res) => {
     const mail = {
         to:'fran2001@outlook.com',
         subject: 'Contacto web', 
-        html: `${req.body.nombre} se contacto por la web y quere mas informacion a este correo ${req.body.email} <br>
+        html: `${req.body.nombre} se contacto por la web y quiere más informacion a este correo ${req.body.email} <br>
         Ademas, hizo el siguiente comentario: ${req.body.mensaje} <br> Su telefono es: ${req.body.telefono}`
     }
 
