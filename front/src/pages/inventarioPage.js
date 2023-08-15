@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import inventarioItem from '../components/layout/inventario/inventarioItem';
+
 
 
 const invetarioPage = (props) => {
