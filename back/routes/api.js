@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var inventarioModel = require('./../models/inventarioModel');
+var inventarioModel = require('../models/inventarioModel');
 var cloudinary = require('cloudinary').v2;
 var nodemailer = require('nodemailer');
 
@@ -16,6 +16,7 @@ router.get('/inventario', async function (req, res, next) {
             });
             return {
                 ...inventario,
+                imagen
             }
         } else {
             imagen
@@ -25,9 +26,11 @@ router.get('/inventario', async function (req, res, next) {
             }
         }
     });
+    
     res.json(inventario);
 });
 
+//Envio de email
 router.post('/contacto', async (req, res) => {
     const mail = {
         to:'fran2001@outlook.com',

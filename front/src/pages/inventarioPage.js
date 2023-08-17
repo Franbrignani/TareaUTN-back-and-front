@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import inventarioItem from '../components/inventarioItem';
 
 const InventarioPage = (props) => {
 
@@ -26,7 +27,7 @@ const InventarioPage = (props) => {
                 ) : (
                     inventario.map(item => <inventarioItem key={item.id}
                         titulo={item.titulo} genero={item.genero}
-                        body={item.autor} imagen={item.imagen} />)
+                        body={item.autor} imagen={item.img_id} />)
                 )
             }
         </section>
