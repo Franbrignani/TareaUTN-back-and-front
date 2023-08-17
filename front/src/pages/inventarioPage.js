@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import inventarioItem from '../components/inventarioItem';
+import InventarioItem from '../components/InventarioItem';
 
 const InventarioPage = (props) => {
 
@@ -20,18 +20,19 @@ const InventarioPage = (props) => {
 
     return (
         <section className="holder">
-            <h2>Inventario</h2>
+            <h2>Inventario: </h2>
             {
                 loading ? (
                     <p>Cargando...</p>
                 ) : (
-                    inventario.map(item => <inventarioItem key={item.id}
+                    console.log(InventarioItem),
+                    inventario.map(item => <InventarioItem key={item.id}
                         titulo={item.titulo} genero={item.genero}
-                        body={item.autor} imagen={item.img_id} />)
+                        autor={item.autor} imagen={item.imagen} />)
                 )
             }
         </section>
-    );
-}
+    )
+};
 
 export default InventarioPage;

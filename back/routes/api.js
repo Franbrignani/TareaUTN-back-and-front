@@ -10,8 +10,8 @@ router.get('/inventario', async function (req, res, next) {
     inventario = inventario.map(inventario => {
         if (inventario.img_id) {
             const imagen = cloudinary.url(inventario.img_id, {
-                width: 960,
-                height: 200,
+                width: 300,
+                height: 400,
                 crop: 'fill'
             });
             return {
@@ -19,7 +19,6 @@ router.get('/inventario', async function (req, res, next) {
                 imagen
             }
         } else {
-            imagen
             return {
                 ...inventario,
                 imagen: ''

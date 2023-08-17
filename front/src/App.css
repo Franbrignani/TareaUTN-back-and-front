@@ -113,6 +113,13 @@ p,h3{
   padding: 5px;
 }
 
+/*inventario*/
+.holder{
+  margin: 60px;
+  
+}
+
+
 /* Contacto */
 .mensaje, .contacto{
   margin: 10px;
