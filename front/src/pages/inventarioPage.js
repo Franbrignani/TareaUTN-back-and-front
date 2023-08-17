@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-
-
-const invetarioPage = (props) => {
+const InventarioPage = (props) => {
 
     const [loading, setLoading] = useState(false);
     const [inventario, setinventario] = useState([]);
@@ -21,18 +19,18 @@ const invetarioPage = (props) => {
 
     return (
         <section className="holder">
-       <h2>Inventario</h2>
-       {
-        loading ? (
-            <p>Cargando...</p>
-        ) : (
-            inventario.map(item => <inventarioItem key={item.id}
-                titulo={item.titulo} genero={item.genero}
-                body={item.autor} imagen={item.imagen} />)
-            )
-       }
-       </section>
-    )
-};
+            <h2>Inventario</h2>
+            {
+                loading ? (
+                    <p>Cargando...</p>
+                ) : (
+                    inventario.map(item => <inventarioItem key={item.id}
+                        titulo={item.titulo} genero={item.genero}
+                        body={item.autor} imagen={item.imagen} />)
+                )
+            }
+        </section>
+    );
+}
 
-export default invetarioPage;
+export default InventarioPage;

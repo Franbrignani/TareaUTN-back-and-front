@@ -8,7 +8,7 @@ import HomePage from './pages/HomePage';
 import Sinopsis from './pages/Sinopsis';
 import Contacto from './pages/Contacto';
 import Autores from './pages/Autores';
-
+import InventarioPage from './pages/InventarioPage';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/Sinopsis" element={<Sinopsis />} />
         <Route path="/Contacto" element={<Contacto />} />
         <Route path="/Autores" element={<Autores />} />
-
+        <Route path="/InventarioPage" element={<InventarioPage />} />
       </Routes>
      </BrowserRouter>
      <Footer />
